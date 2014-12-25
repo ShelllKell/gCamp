@@ -10,34 +10,34 @@
   <!-- Example row of columns -->
   <div class="row">
     <div class="col-md-4">
+      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0yRXVH9SWD4yVJnTlT7XFnCSSYrVMzA7FZmEHbO3BYpQ46JjgexQHULo">
       <h2>Tasks</h2>
       <p>Grouped by projects and lists.  Just the way you like'em.</p>
-      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
     </div>
     <div class="col-md-4">
+      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0yRXVH9SWD4yVJnTlT7XFnCSSYrVMzA7FZmEHbO3BYpQ46JjgexQHULo">
       <h2>Documents</h2>
       <p>Upload. Comment. Revise. </p>
-      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
    </div>
     <div class="col-md-4">
+      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0yRXVH9SWD4yVJnTlT7XFnCSSYrVMzA7FZmEHbO3BYpQ46JjgexQHULo">
       <h2>Comments</h2>
       <p>Comment on tasks and documents.  Get email notifications.</p>
-      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
     </div>
   </div>
 
-
-  <div> <% ['"Failure is not an option. Everyone has to Succeed." - Arnold Schwarzenegger', '"Your time is limited, so dont waste it living someone elses life." -Steve Jobs', '"Better Ingredients, Better Pizza." -Papa John'].each do |i| %>
+  <div>
+    <% @array.each do |i| %>
       <ul>
         <%= i %>
       </ul>
-        <% end %>
+    <% end %>
   </div>
 
   <hr>
 
   <footer>
-    <div><%= link_to "About", about_path %> | <%= link_to "Terms", terms_path %></div>
+    <div><%= link_to "About", about_path %> | <%= link_to "Terms", terms_path %> | <%= link_to "FAQ", faq_path %></div>
     <p>&copy; Company 2014</p>
   </footer>
 </div> <!-- /container -->
