@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get "about" => "about#show"
   get "terms" => "terms#show"
   get "faq" => "faq#show"
+  resources :tasks
 
 end

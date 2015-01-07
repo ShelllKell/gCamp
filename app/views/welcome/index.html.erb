@@ -27,9 +27,10 @@
   </div>
 
   <div>
-    <% @array.each do |i| %>
+    <% @quotes.each do |i| %>
       <ul>
-        <%= i %>
+        <%= i.text %>
+        <%= i.person %>
       </ul>
     <% end %>
   </div>
