@@ -14,3 +14,19 @@ body {
 .col-md-4 {
   height: 250px;
 }
+
+.task-header {
+  font-size: 24pt;
+  display: block;
+  border-bottom: solid;
+}
+
+a {
+  float: right;
+  font-size: 18pt;
+  display: inline-block;
+}
+
+ul {
+  font-size: 14pt;
+}

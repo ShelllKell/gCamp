@@ -1,0 +1,15 @@
+<div class="task-header">
+  Tasks
+  <%= link_to 'New Task', new_task_path %>
+</div>
+
+<div>
+  <% @tasks.each do |task| %>
+    <ul>
+      <%= task.task %>
+      <%= task.due_date.strftime('%B %d, %Y') %>
+      <%= link_to 'Edit', edit_task_path(task.id) %>
+      <%= link_to 'Delete', task_path(task.id), method: :delete %>
+    </ul>
+  <% end %>
+</div>
