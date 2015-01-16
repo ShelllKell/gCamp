@@ -7,9 +7,11 @@
   <% @tasks.each do |task| %>
     <ul>
       <%= task.task %>
-      <%= task.due_date.strftime('%B %d, %Y') %>
-      <%= link_to 'Edit', edit_task_path(task.id) %>
-      <%= link_to 'Delete', task_path(task.id), method: :delete %>
+      <%= task.due_date %>
+      <div class='right'>
+        <%= link_to 'Edit', edit_task_path(task.id) %>
+        <%= link_to 'Delete', task_path(task.id), method: :delete %>
+      </div>
     </ul>
   <% end %>
 </div>

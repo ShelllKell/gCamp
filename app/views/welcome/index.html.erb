@@ -10,23 +10,55 @@
   <!-- Example row of columns -->
   <div class="row">
     <div class="col-md-4">
-      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0yRXVH9SWD4yVJnTlT7XFnCSSYrVMzA7FZmEHbO3BYpQ46JjgexQHULo">
-      <h2><%= link_to "Tasks", new_task_path %></h2>
-      <p>Grouped by projects and lists.  Just the way you like'em.</p>
+      <%= image_tag("one.jpg", height: "200", width: "360") %>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <%= link_to "Tasks", new_task_path %>
+          </div>
+        <div class="panel-body home-panel">
+          <p>Grouped by projects and lists, just the way you like'em</p>
+        </div>
+
+
+    </div>
+
     </div>
     <div class="col-md-4">
-      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0yRXVH9SWD4yVJnTlT7XFnCSSYrVMzA7FZmEHbO3BYpQ46JjgexQHULo">
-      <h2><%= link_to "Documents", root_path %></h2>
-      <p>Upload. Comment. Revise. </p>
+      <%= image_tag("2.jpg", height: "200", width: "360") %>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <%= link_to "Documents", root_path %>
+          </div>
+        <div class="panel-body home-panel">
+          <p>
+            <li>Upload.</li>
+            <li>Comment.</li>
+            <li> Revise.</li>
+          </p>
+        </div>
+
+
+      </div>
+
    </div>
     <div class="col-md-4">
-      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0yRXVH9SWD4yVJnTlT7XFnCSSYrVMzA7FZmEHbO3BYpQ46JjgexQHULo">
-      <h2><%= link_to "Comments", root_path %></h2>
-      <p>Comment on tasks and documents.  Get email notifications.</p>
+      <%= image_tag("3.jpg", height: "200", width: "360") %>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <%= link_to "Comments", root_path %>
+          </div>
+        <div class="panel-body home-panel">
+          <p>Comment on tasks and documents.  Get email notifications.</p>
+        </div>
+      </div>
+
+      </div>
+
+
     </div>
   </div>
 
-  <div>
+  <div class="quotes">
     <% @quotes.each do |i| %>
       <ul>
         <%= i.text %>
@@ -38,7 +70,7 @@
   <hr>
 
   <footer>
-    <div><%= link_to "About", about_path %> | <%= link_to "Terms", terms_path %> | <%= link_to "FAQ", faq_path %></div>
+        <%= link_to "About", about_path %> | <%= link_to "Terms", terms_path %> | <%= link_to "FAQ", faq_path %>
     <p>&copy; Company 2014</p>
   </footer>
 </div> <!-- /container -->
