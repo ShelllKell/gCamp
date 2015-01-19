@@ -5,40 +5,13 @@ body {
   padding-top: 100px;
 }
 
-.panel-heading a:link, a:visited {
-  color: white;
-}
-
-
-.navbar-inverse .navbar-brand {
-    font-size: 36px;
-    color: white;
-}
-
-.task-header {
-  font-size: 24pt;
-  display: block;
-  border-bottom: solid;
-}
-
-.quotes {
-  padding-top: 100px;
-}
-
-a {
-  font-size: 16pt;
-}
-
-
-
-
-a .right {
-  // float: right;
-  font-size: 18pt;
-  // display: inline-block;
-}
 
 img {
   size: 20px;
   margin-bottom: 3rem;
+}
+
+.page-header {
+  font-size: 36pt;
+  border-bottom: solid black;
 }

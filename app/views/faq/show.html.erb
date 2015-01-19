@@ -1,4 +1,8 @@
-<h1>Frequently Asked Questions</h1>
+<div class="page-header">Frequently Asked Questions</div>
+
+<li><%= link_to "What is gCamp?" %></li>
+<li><%= link_to "How do I join gCamp?" %></li>
+<li><%= link_to "When will gCamp be finished?" %></li>
 
 <h3><%= @question[0] %></h3>
 
@@ -11,7 +15,3 @@
 <h3><%= @question[2] %></h3>
 
 <p><%= @answer[2] %></p>
-
-<footer>
-  <div><%= link_to "About", about_path %> | <%= link_to "Terms", terms_path %> | <%= link_to "FAQ", faq_path %></div>
-</footer>
