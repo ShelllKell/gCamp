@@ -1,14 +1,37 @@
 <h1>Create a new task</h1>
- <%= form_for @task do |f| %>
 
- <%= f.label :task, "Description" %>
- <%= f.text_field :task, autofocus: true %>
-    <p>
- <%= f.label :due_date, "Due Date" %>
- <%= f.date_field :due_date %>
-    <p>
- <%= f.submit "Create Task" %>
+<!-- <form>
 
-<% end %>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <input type="description" class="form-control" placeholder="Description">
+  </div>
 
-<%= link_to "Cancel", root_path %>
+  <div class="form-group">
+    <label for="due_date">Due Date</label>
+    <input type="date" class="form-control" placeholder="Due Date">
+  </div>
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form> -->
+
+
+
+<%= form_for @task do |f| %>
+
+<%= f.label :task, "Description" %>
+<%= f.text_field :task, autofocus: true %>
+<p>
+  <%= f.label :due_date, "Due Date" %>
+  <%= f.date_field :due_date %>
+  <p>
+    <%= f.submit "Create Task" %>
+
+    <% end %>
+
+    <%= link_to "Cancel", root_path %>

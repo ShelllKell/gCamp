@@ -1,0 +1,14 @@
+<h1>Edit Task</h1>
+<%= form_for @task do |f| %>
+
+<%= f.label :task, "Description" %>
+<%= f.text_field :task, autofocus: true %>
+<p>
+  <%= f.label :due_date, "Due Date" %>
+  <%= f.date_field :due_date %>
+  <p>
+    <%= f.submit "Update Task" %>
+
+    <% end %>
+
+    <%= link_to "Cancel", root_path %>

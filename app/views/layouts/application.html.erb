@@ -17,7 +17,8 @@
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
@@ -45,7 +46,7 @@
     <div class="container">
       <div class="row">
         <%= yield %>
-      </div>
+
 
 
 
@@ -59,12 +60,13 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
-
+    <footer>
+      <div><%= link_to "About", about_path %> | <%= link_to "Terms", terms_path %> | <%= link_to "FAQ", faq_path %></div>
+    </footer>
+  </div>
   </body>
 
-  <footer>
-    <div><%= link_to "About", about_path %> | <%= link_to "Terms", terms_path %> | <%= link_to "FAQ", faq_path %></div>
-  </footer>
+
 </div>
 
 </html>
